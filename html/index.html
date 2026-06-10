@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý danh sách sản phẩm</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <h1>Quản lý danh sách sản phẩm</h1>
+        <p>Giao diện nhập liệu và hiển thị danh sách sản phẩm một cách trực quan, rõ ràng.</p>
+    </header>
+
+    <main class="container">
+        
+        <section class="form-section card">
+            <h2>Thêm sản phẩm mới</h2>
+            <p class="subtitle">Nhập đầy đủ thông tin để thêm sản phẩm vào danh sách.</p>
+            
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="product-name">Tên sản phẩm</label>
+                    <input type="text" id="product-name" placeholder="Nhập tên sản phẩm">
+                </div>
+                
+                <div class="form-group">
+                    <label for="category">Danh mục</label>
+                    <select id="category">
+                        <option value="">-- Chọn danh mục --</option>
+                        <option value="dienthoai">Điện thoại</option>
+                        <option value="maytinhbang">Máy tính bảng</option>
+                        <option value="phukien">Phụ kiện</option>
+                        <option value="laptop">Laptop</option>
+                        <option value="tainghe">Tai nghe</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="price">Giá</label>
+                    <input type="text" id="price" placeholder="Nhập giá">
+                </div>
+                
+                <div class="form-group">
+                    <label for="status">Trạng thái còn hàng</label>
+                    <select id="status">
+                        <option value="conhang">Còn hàng</option>
+                        <option value="hethang">Hết hàng</option>
+                    </select>
+                </div>
+                
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary">Thêm sản phẩm</button>
+                    <button type="reset" class="btn btn-secondary">Làm mới form</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="list-section card">
+            <h2>Danh sách sản phẩm</h2>
+            <p class="subtitle">Danh sách sản phẩm mẫu được hiển thị từ dữ liệu hệ thống.</p>
+            
+            <table class="product-table">
+                <thead>
+                    <tr>
+                        <th>STT</th>
+                        <th>TÊN SẢN PHẨM</th>
+                        <th>DANH MỤC</th>
+                        <th>GIÁ</th>
+                        <th>TRẠNG THÁI</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Điện thoại iPhone 15</td>
+                        <td>Điện thoại</td>
+                        <td>24.990.000 ₫</td>
+                        <td><span class="badge badge-success">Còn hàng</span></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Máy tính bảng Samsung Galaxy Tab S9</td>
+                        <td>Máy tính bảng</td>
+                        <td>18.500.000 ₫</td>
+                        <td><span class="badge badge-success">Còn hàng</span></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Chuột Logitech MX Master 3S</td>
+                        <td>Phụ kiện</td>
+                        <td>2.490.000 ₫</td>
+                        <td><span class="badge badge-danger">Hết hàng</span></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>MacBook Air M3</td>
+                        <td>Laptop</td>
+                        <td>31.990.000 ₫</td>
+                        <td><span class="badge badge-success">Còn hàng</span></td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Tai nghe Sony WH-1000XM5</td>
+                        <td>Tai nghe</td>
+                        <td>7.990.000 ₫</td>
+                        <td><span class="badge badge-success">Còn hàng</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>    
+    </main>
+    <script src="js/app.js"></script>
+    <script src="data/data.js"></script>
+</body>
+</html>
